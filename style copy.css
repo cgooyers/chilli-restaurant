@@ -1,0 +1,549 @@
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*BASE STYLES*/
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	padding-right: 15%;
+	padding-left: 15%;
+}
+
+.big-wrapper {
+	width: 100%;
+}
+
+span.float-right {
+	float: right;
+	margin: 0 ;
+	padding-top: 16px;
+	font-size: 16px;
+}
+
+
+
+/*FONT STYLES*/
+
+body {
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+}
+
+h1, h2 {
+	font-family: 'Aguafina Script', sans-serif;
+}
+
+h1 {
+	
+	font-size: 72px;
+	margin: 0;
+	position: relative;
+	top: 50px;
+	font-weight: lighter;
+}
+
+h2 {
+	font-size: 36px;
+	padding-bottom: 0;
+	margin: 0;
+	font-weight: 400;
+}
+
+h3 {
+	font-size:95%;
+}
+
+h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 80%;
+
+}
+
+h5 {
+	
+	margin: 0;
+}
+
+.mini-nav-bar h5 {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: lightgrey;
+}
+
+p {
+	font-weight: lighter;
+}
+
+p.mini-title {
+	font-size: 14px;
+}
+
+p.info-paragraph {
+	font-size: 16px;
+}
+
+/*NAV BAR STYLES*/
+.mini-nav-bar {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: black;
+	color: lightgrey;
+	margin: 0 auto;
+	font-size: 60%;
+
+}
+
+.mini-nav-bar p {
+	display: inline-block;
+}
+
+p.number, p.email {
+	margin: 0;
+} 
+
+.nav-bar {
+	background: rgba(29,21,19,0.7);
+	margin: 0;
+}
+
+img.nav-bar-logo {
+	float: left;
+  	position: relative;
+  	top: 18px
+}
+nav ul {
+	float: right;
+	padding: 10px;
+}
+
+.nav-bar-items li {
+	padding: 0 14px;
+	color: Lightgrey;
+	font-size: 70%;
+}
+
+.nav-icon {
+	padding: 0 10px 0 20px;
+
+}
+
+.nav-title {
+	float: left;
+}
+.nav-info {
+	float: right;
+}
+
+/*HEADER STYLES*/
+header {
+	background: url(assets/restaurant-hero-bg.jpg) no-repeat top center;
+	background-size: cover;
+	color: white;
+	margin: 0;
+	position: relative;
+	height: 100vh;
+}
+
+
+header ul li {
+	display: inline-block;
+}
+
+.hero {
+	text-align: center;
+}
+
+span {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.coffee::before {
+	content: " ";
+	width: 30px;
+	height: 1px;
+	background: white;
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	margin-right: 15px;
+}
+
+.coffee::after {
+	content: url(assets/home-page/white-star.png);
+	padding: 0 25px;
+}
+
+.bar::after {
+	content: url(assets/home-page/white-star.png);
+	padding: 0 25px;
+}
+
+.restaurant::after {
+	content: " ";
+	width: 30px;
+	height: 1px;
+	background: white;
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	margin-left: 15px;
+}
+
+.welcome-container img, h3 {
+	position: relative;
+	top: 20px;
+}
+
+.welcome-container {
+	padding-top: 50px;
+}
+
+/*ABOUT STYLE*/
+
+section {
+	text-align: center;
+}
+
+
+.about-left, .about-right {
+	float: left;
+	width: 37%;
+	margin: 40px;
+}
+
+.about-right {
+	width: 43%;
+	margin: 40px;
+}
+
+.about-photo {
+	width: 100%;
+}
+
+/* SPECIALS STYLES*/
+
+section.specials {
+	background: #f5f5f5;
+	padding-top: 65px;
+}
+
+.specials-container {
+	background: url(assets/home-page/specials-border.png)no-repeat top center;
+	background-size: cover;
+	height: 514px;
+}
+
+.menu-items li {
+	list-style-type: none;
+	padding: 20px;
+	float: left;
+}
+
+.menu-items {
+	padding-top: 35px;
+}
+
+.menu-columns {
+	width: 31%;
+	float: left;
+	padding-top: 45px;
+}
+
+p.h2-title {
+	font-weight: 600;
+}
+
+img.cutlery {
+	width: 80%;
+	margin-right: 30px;
+}
+
+a {
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+color: black;
+font-size: 14px;
+
+}
+
+.button {
+	
+	border: 2px solid black;
+	height: 30px;
+	width: 125px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 40px;
+}
+
+
+/*RESERVE STYLES*/
+
+section.reserve {
+	background: url(assets/header-background.jpg) no-repeat top left;
+	color: white;
+	height: 53vh;
+	background-size: cover;
+}
+
+.reserve-header {
+ padding: 35px 0 20px 0;
+}
+
+section.reserve a {
+	color: white;
+}
+
+input {
+	font-style: italic;
+	font-size: 14px;
+	margin: 10px;
+	float: left;
+	padding-left: 10px;
+}
+
+input.bigger-box {
+	width: 270px;
+	height: 30px;
+}
+
+input.smaller-box {
+	height: 30px;
+	width: 195px;
+	
+}
+
+input.book-now-button {
+	height: 30px;
+	width:  130px;
+	background: #ff514a;
+	color: white;
+	float: left;
+	border: none;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/*SERVICE STYLES*/
+
+section.service {
+	background: #F5F5F6;
+}
+
+
+.wedding, .birthday, .office, .hostess {
+	float: left;
+	display: inline-block;
+	background: white;
+	width: 200px;
+	height: 115px;
+	position: relative;
+	margin: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.service-images p {
+	margin-top: 72px;
+	
+
+}
+
+p.service-image-title {
+	font-weight: 600;
+}
+
+section.service p {
+	padding-bottom: 70px;
+}
+.service-images img {
+	top: -64px;
+	left: 35px;
+	position: absolute;
+}
+
+.service-images {
+	padding-bottom: 50px;
+}
+.service-header {
+	padding-top: 50px;
+}
+
+/*FOOTER SECTION 1 STYLES*/
+
+footer {
+	width: 100%;
+}
+
+footer p.footer1 {
+	text-align: center;
+	width: 79%;
+	margin-left: 95px;
+}
+
+footer h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+
+section.footer-section1 {
+	background: url(assets/header-background.jpg) no-repeat;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+/* FOOTER SECTION 2 STYLES */
+
+footer h5 {
+	font-weight: 400;
+	font-size: 16px;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+section.footer-section2-container {
+	width: 100%;
+	background: #303030;
+	color: #909090;
+}
+
+.footer-middle ul {
+	padding: 0;
+}
+
+.footer-middle ul li {
+	text-align: left;
+	font-weight: 400;
+	list-style-type: none; 
+	padding: 5px;
+
+}
+
+.newsletter, .open-hours, .address {
+	width: 30%;
+	height: 100%;
+	float: left;
+	padding: 20px 5px 10px 20px;
+	margin-right: 10px;
+	font-size: 14px;
+
+}
+
+.open-hours, .address {
+	border-left: 1px solid rgb(57, 55, 55);
+}
+
+p.footer-para {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	padding-top: 30px;
+	padding-bottom: 20px;
+
+}
+
+input.footer {
+	width: 200px;
+	float: left;
+	height: 30px;
+	margin: 0;
+
+}
+
+input.footer-button {
+	margin: 0;
+	width: 30px;
+	float: left;
+	background: #ff514a;
+	border: none;
+	height: 30px;
+	border-left: 1px solid #F8261E;
+	color: white;
+}
+
+span.footer-float-right, span.footer-float-right-grey {
+	float: right;
+	margin: 0 ;
+	font-size: 15px;
+	margin-top: -23px;
+	font-weight: 400;
+
+}
+span.footer-float-right {
+	color: white;
+}
+
+span.footer-float-right-grey {
+	color: #909090;
+	text-align: left;
+	float: left;
+	margin-left: 25px;
+}
+
+footer .float-right {
+	float: right;
+}
+
+footer i {
+	color: white;
+
+}
+.empty-box {
+	height: 14px;
+	width: 14px;
+	background: #303030;
+}
+
+span ul {
+	text-align: left;
+}
+
+/*FOOTER - SECTION 3 STYLES*/
+section.footer-section3-container {
+	background: #242424;
+	color: #5a5a5a;
+	text-align: center;
+}
+
+p.text-align-center {
+	text-align: center;
+}
+
+.footer-icons img {
+	padding: 0px 10px;
+}
+
